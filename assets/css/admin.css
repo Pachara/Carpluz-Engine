@@ -1,0 +1,33 @@
+.margin_bottom_1{
+	margin-bottom:5px !important;
+}
+.font_size_80{
+	font-size: 80% !important;
+}
+.hidden{
+	display:none!important;
+}
+div#booking_detail{
+	font-size:0.8em!important;
+}
+
+div#booking_detail legend {
+	color:black !important;
+	font-weight: bold;
+	text-align: center;
+	font-size:1.2em;
+}
+
+div#booking_detail div.booking_label{
+	width:7em;
+	text-align: right;
+	display: inline-block;
+	font-weight: bold;
+}
+div#booking_detail div.booking_value{
+	margin-left:5px;
+	display: inline-block;
+	}
+
+
+

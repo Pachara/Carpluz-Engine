@@ -1,0 +1,15 @@
+# Options
+Options -Multiviews
+# For security reasons, Option followsymlinks cannot be overridden.
+#Options +FollowSymLinks
+Options +SymLinksIfOwnerMatch
+
+#Enable mod rewrite
+RewriteEngine On
+
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^carpluz.com$
+RewriteRule ^/?$ "http\:\/\/www\.carpluz\.com\/" [R=301,L]
+
+RewriteCond $1 !^(index\.php|assets|robots\.txt)
+RewriteRule ^(.*)$ index.php/$1 [L]
